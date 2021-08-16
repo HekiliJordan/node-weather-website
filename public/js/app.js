@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded')
-
 // pass a url string, fetch data then run functions
 fetch('http://puzzle.mead.io/puzzle').then( (response) => {
     response.json().then((data) => {
