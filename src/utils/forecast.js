@@ -20,9 +20,9 @@ const forecast = (latitude, longitude, callback) => {
             let time = localtime.split(" ")
 
             callback(undefined,
-               'Right now in ' + body.location.name + ': ' + body.current.weather_descriptions[0].toLowerCase() + ' outside' + 
-               '. The weather outside is ' + body.current.temperature + ' degrees with a precipitation level of ' + 
-               body.current.precip + '.The current time is ' + time[1]
+               body.current.weather_descriptions[0].toLowerCase() + 
+               '. It is ' + body.current.temperature + ' degrees outisde with a precipitation level of ' + 
+               body.current.precip + '. Current time is: ' + time[1]
             )}
         
     })
